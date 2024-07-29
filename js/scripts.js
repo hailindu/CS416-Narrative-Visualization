@@ -192,12 +192,12 @@ function renderChart(data) {
           note: {
               label: `${maxTempPoint.temperature}°C`,
               title: "Highest Temperature Change",
-              wrap: 200
+              wrap: 100
           },
           x: x(maxTempPoint.year),
           y: y(maxTempPoint.temperature),
           dy: 200,
-          dx: 0
+          dx: -20
       }
   ];
 
@@ -316,12 +316,12 @@ function renderCityChart(data) {
           note: {
               label: `${maxTempPoint.temperature.toFixed(3)}°C`,
               title: "Highest Temperature Change",
-              wrap: 200
+              wrap: 100
           },
           x: x(maxTempPoint.year),
           y: y(maxTempPoint.temperature),
           dy: 200,
-          dx: 0
+          dx: -20
       }
   ];
 
