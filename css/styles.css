@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+}
+header {
+  background: #000a38af;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+header button {
+  margin: 5px;
+  padding: 10px 20px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+}
+header button:hover {
+  background: #ccc;
+}
+#content {
+  padding: 20px;
+  text-align: center;
+}
+#chart-container, #city-chart-container {
+  width: 800px;
+  height: 400px;
+  margin: auto;
+}
+#chart-description {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}

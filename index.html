@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global Temperature Visualization</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Global Temperature Changes</h1>
+        <button onclick="showHome()">Home</button>
+        <button onclick="showChart()">View Temperature Changes By Country</button>
+        <button onclick="showCityChart()">View Temperature Changes By Major Cities</button>
+    </header>
+    <main id="content">
+          <section id="home" style="display: block;">
+            <h2>Welcome to the Global Temperature Visualization</h2>
+            <p>Have you ever wondered about the reality of climate change over the decades? With increasing mentions of climate change by the media and people around the world, have you found yourself questioning its impact? Is climate change just a topic of discussion, or does it hold real, visual evidence?</p>
+            <p>This interactive visualization allows you to explore temperature changes over time for various countries and major cities. Dive in to see the data for yourself and form your own understanding of how our planet's climate is evolving.</p>
+            <p>Start by selecting a country or a major city to see the yearly temperature changes and understand the significant impacts of global warming.</p>
+        </section>
+        <section id="chart" style="display: none;">
+            <h2>Temperature Changes By Country</h2>
+            <label for="country-select">Select Country:</label>
+            <select id="country-select"></select>
+            <div id="chart-container"></div>
+            <p class="description">
+              This dataset provides temperature change indicators for various countries from 1961 to 2022. The data shows yearly temperature changes relative to a baseline period of 1951-1980.
+            </p>
+            <p class="description">
+              Recommend selecting the country <strong>"World"</strong> as the first exploration. Continue to explore any country that you are interested in. If you pay attention closely, almost every country is showing a trend of temperature change moving upward, particularly in recent years, indicating the <strong>highest temperature</strong> changes. This trend continues to grow.
+            </p>
+        </section>
+        <section id="city-chart" style="display: none;">
+            <h2>Temperature Changes By Major Cities</h2>
+            <label for="city-select">Select City:</label>
+            <select id="city-select"></select>
+            <div id="city-chart-container"></div>
+            <p class="description">
+              This dataset provides temperature change indicators for major cities from 1849 to 2022. The data shows yearly temperature changes relative to a baseline period of 1951-1980.
+            </p>
+            <p class="description">
+              Recommend starting your exploration with a city you are familiar with or one that interests you the most. You will notice that many major cities show significant temperature changes, particularly in the recent decades. The visualization highlights the <strong>highest temperature</strong> changes, showing a clear upward trend over time.
+            </p>
+        </section>
+    </main>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
